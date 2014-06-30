@@ -1,0 +1,45 @@
+vim: set syntax=markdown
+# Notes for making notes
+
+This is a plain text document.  It could also be markdown, which would look
+pretty good in a browser.
+
+## links for study
+http://vimfingers.org
+
+
+I wil show here how to write documentation for notes that you may want to take
+for your Ruby, but also have them be "executable" code so that later if you
+upgrade to a newer or change to an older version of Ruby, you will know what
+things change that you know.
+
+
+Also, we may enter some notes about vim keys... for instance, I entered the
+line above as one long line, and then pressed `gqq` to get it to wrap about 80
+charcters in.
+
+OK, about the RubyDoctest... we can write our notes here and include the
+rubydoctest syntax as well.
+
+    doctest: A sample doctest inside of a text file
+    >> 1 + 1
+    => 2
+
+The same way that we check *our* notes here is the same way we check our code as
+we are writing... simply do `:!rubydoctest %`
+
+So let's document some of the nice notes we have for week 1, for helpful
+methods...
+
+## Useful methods
+
+### printf
+
+Another output method we use a lot is printf, which prints its arguments under
+the control of a format string (just like printf in C or Perl).
+
+    doctest: printf returns nil, but provides a formatted string
+    >> printf("Number: %5.2f,\nString: %s\n", 7.18, "FORPC101")
+    => nil
+
+
